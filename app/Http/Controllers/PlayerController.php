@@ -8,7 +8,7 @@ class PlayerController extends Controller
 {
     public function index() 
      {
-        return view('player/home', [
+        return view('player/alll', [
             "title" => "home",
             "pemain" => Player::all()
             

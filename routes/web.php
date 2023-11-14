@@ -18,8 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', [PlayerController::class,"index"]);
-Route::get('/coach', [PelatihController::class,"index"]);
+Route::get('/alll', [PlayerController::class,"index"]);
+Route::get('/all', [PelatihController::class,"index"]);
 
 Route::get('detail/{pemain}', [PlayerController::class, "show"]);
 Route::get('edit/{pemain}', [PlayerController::class, "lihat"]);

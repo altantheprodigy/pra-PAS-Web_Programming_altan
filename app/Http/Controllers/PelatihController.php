@@ -8,7 +8,7 @@ class PelatihController extends Controller
 {
     public function index() 
      {
-        return view('pelatih/coach', [
+        return view('pelatih/all', [
             "title" => "pelatih",
             "pelatih" => Pelatih::all()
             
