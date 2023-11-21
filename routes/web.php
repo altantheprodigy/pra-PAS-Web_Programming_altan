@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\PlayerController;
 use App\Http\Controllers\PelatihController;
+use App\Http\Controllers\ClubController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,9 +21,13 @@ Route::get('/', function () {
 
 Route::get('/alll', [PlayerController::class,"index"]);
 Route::get('/all', [PelatihController::class,"index"]);
+Route::get('/allclub', [ClubController::class,"index"]);
 
 Route::get('detail/{pemain}', [PlayerController::class, "show"]);
 Route::get('edit/{pemain}', [PlayerController::class, "lihat"]);
 
 Route::get('detil/{pelatih}', [PelatihController::class, "see"]);
 Route::get('ubah/{pelatih}', [PelatihController::class, "ubah"]);
+
+
+Route::get('detailclub/{club}', [ClubController::class, "detailclub"]);
