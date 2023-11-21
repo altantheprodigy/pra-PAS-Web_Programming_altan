@@ -32,7 +32,6 @@
                 </a>
             </td>
             </tr> 
-           
            @php
             $no++;
             @endphp
